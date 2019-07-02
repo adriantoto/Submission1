@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dicoding.adrian.madesubmission1.DetailMovieActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/poster_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/poster_banner_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poster_dragon"
+            android:tint="@color/poster_banner_tint" />
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/btnPlay_marginTop"
+            android:background="@drawable/ripple_play_bg"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btnBack_marginLeft"
+            android:layout_marginTop="@dimen/btnBack_marginTop"
+            android:background="@drawable/ripple_back_bg"
+            android:src="@drawable/ic_down" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardviewPosterDetail"
+            android:layout_width="@dimen/posterCardView_width"
+            android:layout_height="@dimen/posterCardView_height"
+            android:layout_marginStart="@dimen/posterCardView_marginLeft"
+            android:layout_marginTop="@dimen/posterCardView_marginTop"
+            android:elevation="@dimen/posterCardView_elevation"
+            app:cardCornerRadius="@dimen/posterCardView_radius">
+
+            <ImageView
+                android:id="@+id/poster_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/poster_dragon" />
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/atas_kanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/atasKanan_marginLeft"
+            android:layout_marginTop="@dimen/atasKanan_marginTop"
+            android:paddingEnd="@dimen/atasKanan_paddingRight">
+
+            <TextView
+                android:id="@+id/txt_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/txtTitleDetail_padding"
+                android:text="@string/txtTitleDetail_title"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtTitleDetail_textSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/genre_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_title_detail"
+                android:layout_marginEnd="@dimen/genreMark_marginRight"
+                android:text="@string/genreMark_text" />
+
+            <TextView
+                android:id="@+id/runtime_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genre_mark"
+                android:layout_marginEnd="@dimen/runtimeMark_marginRight"
+                android:text="@string/runtimeMark_text" />
+
+            <TextView
+                android:id="@+id/director_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/runtime_mark"
+                android:layout_marginEnd="@dimen/directorMark_marginRIght"
+                android:text="@string/directorMark_text" />
+
+            <TextView
+                android:id="@+id/rating_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/director_mark"
+                android:layout_marginEnd="@dimen/ratingMark_marginRight"
+                android:text="@string/ratingMark_text" />
+
+            <TextView
+                android:id="@+id/txt_genreDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_title_detail"
+                android:layout_toEndOf="@id/genre_mark"
+                android:text="@string/genreDetail_text"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_runtimeDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_genreDetail"
+                android:layout_toEndOf="@id/runtime_mark"
+                android:text="@string/txtRuntimeDetail_text"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_directorDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_runtimeDetail"
+                android:layout_toEndOf="@id/director_mark"
+                android:text="@string/john_molucas"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_ratingDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_directorDetail"
+                android:layout_toEndOf="@id/rating_mark"
+                android:text="@string/ratingDetail_text"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/pertengahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pertengahan_marginTop"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/garis_atas"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/garis_pembagi"
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/garisPembagi_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/garis_tengah"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/synopsis_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/synopsisMark_text"
+                android:textAlignment="center"
+                android:textSize="@dimen/synopsisMark_textSize"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/garis_bawah"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txt_overviewDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/overviewDetail_paddignLeft"
+                android:paddingTop="@dimen/overviewDetail_paddingTop"
+                android:paddingEnd="@dimen/overviewDetail_paddingRight"
+                android:paddingBottom="@dimen/overviewDetail_paddingBottom"
+                android:text="@string/overviewDetail_text"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/overviewDetail_textSize" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tengah_halaman"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tengahHalaman_height"
+            android:layout_marginTop="@dimen/tengahHalaman_marginTop">
+
+            <LinearLayout
+                android:id="@+id/sebelah_kiri"
+                android:layout_width="@dimen/sebelahKiri_width"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/score_paket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/scorePaket_marginEnd">
+
+                    <ImageView
+                        android:id="@+id/icon_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/iconStar_marginEnd"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:id="@+id/txt_scoreAngkaDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/scoreAngkaDetail_marginEnd"
+                        android:layout_toEndOf="@id/icon_star"
+                        android:text="@string/scoreAngkaDetail_text"
+                        android:textColor="@color/duskYellow"
+                        android:textSize="@dimen/scoreAngkaDetail_textSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/txt_scoreAngkaDetail"
+                        android:text="@string/txtPercent_text"
+                        android:textColor="@color/duskYellow"
+                        android:textSize="@dimen/textPercent_textSize"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sebelah_kanan"
+                android:layout_width="@dimen/sebelahKanan_width"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/sebelah_kiri"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.like.LikeButton
+                    android:id="@+id/star_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon_size="@dimen/starButton_iconSize"
+                    app:icon_type="@string/starButton_iconType" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>

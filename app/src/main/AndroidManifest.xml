@@ -10,14 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name="dicoding.adrian.madesubmission1.DetailMovieActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name="dicoding.adrian.madesubmission1.SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="dicoding.adrian.madesubmission1.MainActivity"></activity>
+        <activity
+            android:name="dicoding.adrian.madesubmission1.MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

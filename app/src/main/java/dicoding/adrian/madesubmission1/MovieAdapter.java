@@ -1,6 +1,8 @@
 package dicoding.adrian.madesubmission1;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +14,6 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.app.madesubmission1.R;
 
@@ -59,15 +60,24 @@ public class MovieAdapter extends BaseAdapter implements Filterable {
         // ViewHolder Instance
         ViewHolder viewHolder = new ViewHolder(view);
 
-        // Binding process
-        Movie movie = (Movie) getItem(i);
+        // Movie Instance
+        final Movie movie = (Movie) getItem(i);
+
+        // Binding Process
         viewHolder.bind(movie);
 
-        // ----------------------- INTENT -----------------------
+        // |---------INTENT---------|
         viewHolder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(View v) {
-                Toast.makeText(context, movies.get(i).getTitle(), Toast.LENGTH_SHORT).show();
+
+                // Define and start intent
+                Intent moveWithObjectIntent = new Intent(context, DetailMovieActivity.class);
+                moveWithObjectIntent.putExtra(DetailMovieActivity.EXTRA_MOVIE, movie);
+                context.startActivity(moveWithObjectIntent);
+
+                // Intent Transition Animation
+                ((Activity) context).overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
             }
         });
 
@@ -75,6 +85,7 @@ public class MovieAdapter extends BaseAdapter implements Filterable {
         Animation animation = AnimationUtils.loadAnimation(context, R.anim.fade_in);
         view.startAnimation(animation);
 
+        // Output
         return view;
     }
 
@@ -113,7 +124,9 @@ public class MovieAdapter extends BaseAdapter implements Filterable {
                     // CHECK
                     if (filterList.get(i).getTitle().toUpperCase().contains(constraint)) {
                         Movie m = new Movie(filterList.get(i).getPoster(), filterList.get(i).getTitle(), filterList.get(i).getReleasedYear(),
-                                filterList.get(i).getOverview(), filterList.get(i).getRating(), filterList.get(i).getGenre(), filterList.get(i).getScore());
+                                filterList.get(i).getOverview(), filterList.get(i).getRating(), filterList.get(i).getGenre(),
+                                filterList.get(i).getScore(), filterList.get(i).getTrailer(), filterList.get(i).getRuntime(),
+                                filterList.get(i).getDirector());
                         // ADD ITEM TO FILTERED ITEMS
                         filters.add(m);
                     }

@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">MADESubmission1</string>
+    <string name="txtTitleDetail_title">How To Train Your Dragon: The Hidden World</string>
+    <string name="genreMark_text">Genre:</string>
+    <string name="runtimeMark_text">Duration:</string>
+    <string name="directorMark_text">Director:</string>
+    <string name="ratingMark_text">Rating:</string>
+    <string name="genreDetail_text">Action, Adventure, Fantasy</string>
+    <string name="txtRuntimeDetail_text">2 Hours 45 Minutes</string>
+    <string name="john_molucas">John Molucas</string>
+    <string name="ratingDetail_text">PG-13</string>
+    <string name="synopsisMark_text">SYNOPSIS</string>
+    <string name="overviewDetail_text">As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.</string>
+    <string name="scoreAngkaDetail_text">88</string>
+    <string name="txtPercent_text">%</string>
+    <string name="starButton_iconType">heart</string>
+    <string name="empty_text">Sorry, your search did not match any movie title :(</string>
+    <string name="tv_text">Movie Catalogue</string>
+    <string name="percent_text">%</string>
+    <string name="menuSearh_text">Search</string>
 
     <string-array name="data_title">
         <item>A Star Is Born</item>
@@ -22,6 +40,75 @@
         <item>The Girl in The Spider\'s Web</item>
         <item>The Mule</item>
         <item>Venom</item>
+    </string-array>
+
+    <string-array name="data_director">
+        <item>Bradley Cooper</item>
+        <item>James Wan</item>
+        <item>Russo\'s Brothers</item>
+        <item>Sussane Bier</item>
+        <item>Bryan Singer</item>
+        <item>Travis Knight</item>
+        <item>Steven Caple Jr.</item>
+        <item>David Leitch</item>
+        <item>Dean DeBois</item>
+        <item>Tatsuya Nagamine</item>
+        <item>M. Night Shyamalan</item>
+        <item>Donovan Marsh</item>
+        <item>Rob Marshall</item>
+        <item>Christian Rivers</item>
+        <item>Aris Nugraha</item>
+        <item>Otto Bathurst</item>
+        <item>Peter Ramsey</item>
+        <item>Fede Alvarez</item>
+        <item>Clint Eastwood</item>
+        <item>Ruben Fleischer</item>
+    </string-array>
+
+    <string-array name="data_runtime">
+        <item>2 hours 14 minutes</item>
+        <item>2 hours 22 minutes</item>
+        <item>2 hours 40 minutes</item>
+        <item>2 hours 4 minutes</item>
+        <item>2 hours 13 minutes</item>
+        <item>1 hour 54 minutes</item>
+        <item>2 hours 10 minutes</item>
+        <item>2 hours 14 minutes</item>
+        <item>1 hour 44 minutes</item>
+        <item>1 hour 41 minutes</item>
+        <item>2 hours 9 minutes</item>
+        <item>2 hours 1 minutes</item>
+        <item>2 hours 10 minutes</item>
+        <item>2 hours 9 minutes</item>
+        <item>1 hour 34 minutes</item>
+        <item>1 hour 56 minutes</item>
+        <item>1 hour 56 minutes</item>
+        <item>1 hour 57 minutes</item>
+        <item>1 hour 55 minutes</item>
+        <item>2 hours 20 minutes</item>
+    </string-array>
+
+    <string-array name="data_trailer">
+        <item>https://www.youtube.com/watch?v=nSbzyEJ8X9E</item>
+        <item>https://www.youtube.com/watch?v=WDkg3h8PCVU</item>
+        <item>https://www.youtube.com/watch?v=6ZfuNTqbHE8</item>
+        <item>https://www.youtube.com/watch?v=INJ2bPFy108</item>
+        <item>https://www.youtube.com/watch?v=mP0VHJYFOAU</item>
+        <item>https://www.youtube.com/watch?v=lcwmDAYt22k</item>
+        <item>https://www.youtube.com/watch?v=u22BXhMu4tI</item>
+        <item>https://www.youtube.com/watch?v=PCf03KXyzIg</item>
+        <item>https://www.youtube.com/watch?v=SkcucKDrbOI</item>
+        <item>https://www.youtube.com/watch?v=wuIbeQv3v7c</item>
+        <item>https://www.youtube.com/watch?v=95ghQs5AmNk</item>
+        <item>https://www.youtube.com/watch?v=mnP_z3qXDCQ</item>
+        <item>https://www.youtube.com/watch?v=-3jsfXDZLIY</item>
+        <item>https://www.youtube.com/watch?v=IRsFc2gguEg</item>
+        <item>https://www.youtube.com/watch?v=WnB7YMFsKFI</item>
+        <item>https://www.youtube.com/watch?v=zwPn9ZnbCo0</item>
+        <item>https://www.youtube.com/watch?v=g4Hbz2jLxvQ</item>
+        <item>https://www.youtube.com/watch?v=XKMSP9OKspQ</item>
+        <item>https://www.youtube.com/watch?v=N_QksSzK7sI</item>
+        <item>https://www.youtube.com/watch?v=xLCn88bfW1o</item>
     </string-array>
 
     <string-array name="data_rating">

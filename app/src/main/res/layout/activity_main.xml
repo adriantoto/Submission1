@@ -11,27 +11,27 @@
         android:id="@android:id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginStart="@dimen/list_marginLeft"
+        android:layout_marginEnd="@dimen/list_marginRight"
         android:clipToPadding="false"
         android:divider="@android:color/transparent"
-        android:dividerHeight="10dp"
+        android:dividerHeight="@dimen/list_dividerHeight"
         android:drawSelectorOnTop="true"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp" />
+        android:paddingTop="@dimen/list_paddingTop"
+        android:paddingBottom="@dimen/list_paddingBottom" />
 
     <TextView
         android:id="@android:id/empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginRight="10dp"
-        android:text="Sorry, your search did not match any movie title :("
+        android:layout_marginStart="@dimen/empty_marginLeft"
+        android:layout_marginTop="@dimen/empty_marginTop"
+        android:layout_marginEnd="@dimen/empty_marginRight"
+        android:text="@string/empty_text"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22sp"
+        android:textSize="@dimen/empty_textSize"
         android:textStyle="bold" />
 
 </FrameLayout>

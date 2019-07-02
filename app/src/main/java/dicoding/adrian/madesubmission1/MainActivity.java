@@ -2,14 +2,12 @@ package dicoding.adrian.madesubmission1;
 
 import android.content.res.TypedArray;
 import android.graphics.drawable.AnimationDrawable;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -32,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     private String[] dataRating;
     private String[] dataGenre;
     private int[] dataScore;
+    private String[] dataTrailer;
+    private String[] dataRuntime;
+    private String[] dataDirector;
     private TypedArray dataPoster;
     private MovieAdapter adapter;
     private ArrayList<Movie> movies;
@@ -117,6 +118,9 @@ public class MainActivity extends AppCompatActivity {
             movie.setGenre(dataGenre[i]);
             movie.setReleasedYear(dataReleasedYear[i]);
             movie.setScore(dataScore[i]);
+            movie.setTrailer(dataTrailer[i]);
+            movie.setRuntime(dataRuntime[i]);
+            movie.setDirector(dataDirector[i]);
             movies.add(movie);
         }
         return movies;
@@ -130,5 +134,8 @@ public class MainActivity extends AppCompatActivity {
         dataGenre = getResources().getStringArray(R.array.data_genre);
         dataReleasedYear = getResources().getStringArray(R.array.data_released_year);
         dataScore = getResources().getIntArray(R.array.data_score);
+        dataTrailer = getResources().getStringArray(R.array.data_trailer);
+        dataRuntime = getResources().getStringArray(R.array.data_runtime);
+        dataDirector = getResources().getStringArray(R.array.data_director);
     }
 }
