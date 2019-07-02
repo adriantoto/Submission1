@@ -16,6 +16,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.app.madesubmission1.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -182,7 +183,7 @@ public class MovieAdapter extends BaseAdapter implements Filterable {
             txtOverview.setText(movie.getOverview());
             txtRatingHome.setText(movie.getRating());
             txtGenreHome.setText(movie.getGenre());
-            imgPoster.setImageResource(movie.getPoster());
+            Picasso.get().load(movie.getPoster()).into(imgPoster);
             scoreHome.setRating((float) ((movie.getScore() * 5) / 100));
             txtScoreAngka.setText(String.valueOf(movie.getScore()));
         }

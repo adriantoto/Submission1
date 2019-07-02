@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.app.madesubmission1.R;
 import com.like.LikeButton;
 import com.like.OnLikeListener;
+import com.squareup.picasso.Picasso;
 
 public class DetailMovieActivity extends AppCompatActivity {
 
@@ -80,8 +81,8 @@ public class DetailMovieActivity extends AppCompatActivity {
         txtScoreAngkaDetail.setText(String.valueOf(movie.getScore()));
 
         // Mengisi data image
-        posterBanner.setImageResource(movie.getPoster());
-        posterDetail.setImageResource(movie.getPoster());
+        Picasso.get().load(movie.getPoster()).into(posterBanner);
+        Picasso.get().load(movie.getPoster()).into(posterDetail);
 
         // Mengisi data URL Trailer
         urlTrailer = movie.getTrailer();

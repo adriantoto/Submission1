@@ -73,4 +73,8 @@
     <dimen name="txtGenreHome_textSize">12sp</dimen>
     <dimen name="txtOverview_marginStart">26dp</dimen>
     <dimen name="txtOverview_marginTop">5dp</dimen>
+    <dimen name="garisAtas_height">1dp</dimen>
+    <dimen name="garisPembagi_width">1dp</dimen>
+    <dimen name="garisTengah_height">1dp</dimen>
+    <dimen name="garisBawah_height">1dp</dimen>
 </resources>

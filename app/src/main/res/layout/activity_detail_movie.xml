@@ -153,12 +153,12 @@
             <View
                 android:id="@+id/garis_atas"
                 android:layout_width="match_parent"
-                android:layout_height="0.5dp"
+                android:layout_height="@dimen/garisAtas_height"
                 android:background="@android:color/darker_gray" />
 
             <View
                 android:id="@+id/garis_pembagi"
-                android:layout_width="0.5dp"
+                android:layout_width="@dimen/garisPembagi_width"
                 android:layout_height="@dimen/garisPembagi_height"
                 android:layout_gravity="center_horizontal"
                 android:background="@android:color/darker_gray" />
@@ -166,22 +166,24 @@
             <View
                 android:id="@+id/garis_tengah"
                 android:layout_width="match_parent"
-                android:layout_height="0.5dp"
+                android:layout_height="@dimen/garisTengah_height"
                 android:background="@android:color/darker_gray" />
 
             <TextView
                 android:id="@+id/synopsis_mark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/mygradient"
                 android:text="@string/synopsisMark_text"
                 android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="@dimen/synopsisMark_textSize"
                 android:textStyle="bold" />
 
             <View
                 android:id="@+id/garis_bawah"
                 android:layout_width="match_parent"
-                android:layout_height="0.5dp"
+                android:layout_height="@dimen/garisBawah_height"
                 android:background="@android:color/darker_gray" />
 
             <TextView
