@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private String[] dataDirector;
     private TypedArray dataPoster;
     private MovieAdapter adapter;
-    private ArrayList<Movie> movies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
     // METHODS
 
     private ArrayList<Movie> getMovies() {
-        movies = new ArrayList<>();
+        ArrayList<Movie> movies = new ArrayList<>();
         for (int i = 0; i < dataTitle.length; i++) {
             Movie movie = new Movie();
             movie.setPoster(dataPoster.getResourceId(i, -1));

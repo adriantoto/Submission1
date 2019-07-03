@@ -195,7 +195,7 @@ public class MovieAdapter extends BaseAdapter implements Filterable {
         }
 
         // Method setItemClickListener
-        public void setItemClickListener(ItemClickListener ic) {
+        void setItemClickListener(ItemClickListener ic) {
             this.itemClickListener = ic;
         }
 

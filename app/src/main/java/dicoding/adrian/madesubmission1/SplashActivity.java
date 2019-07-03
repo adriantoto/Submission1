@@ -12,9 +12,7 @@ import com.app.madesubmission1.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    // Variables Declaration
-    private TextView tv;
-    private ImageView iv;
+    protected ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +20,8 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // Casting Variables
-        tv = findViewById(R.id.tv);
+        // Variables Declaration
+        TextView tv = findViewById(R.id.tv);
         iv = findViewById(R.id.iv);
 
         // Transition Animation
